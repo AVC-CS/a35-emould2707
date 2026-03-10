@@ -7,7 +7,18 @@ using namespace std;
 int main()
 {
     int rdnum1, rdnum2, rdnum3;
-    int total = 0;
+    int total, avg;
+
+    srand(time(0));
+    rdnum1 = rand() %100;
+    rdnum2 = rand() %100;
+    rdnum3 = rand() %100;
+    cout << rdnum1 << " " << rdnum2 << " " << rdnum3 << endl;
+    total = rdnum1 + rdnum2 + rdnum3;
+    avg = total / 3;
+    cout << total << " " << avg << endl;
+    
+
 
     // TODO: seed the random number generator with time(0)
 
